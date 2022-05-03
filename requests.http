@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "George Hengel",
+  "age": 53,
+  "email": "georgehengel@email.com"
+}
+
+###
+# Obtener todos los usuarios
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+# Obtener usuario especifico
+GET http://localhost:9000/api/users/62719896974e3e2522556aa1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/62719896974e3e2522556aa1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Jorge Hengel",
+  "age": 53,
+  "email": "jorgeehengel@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/62719896974e3e2522556aa1 HTTP/1.1
